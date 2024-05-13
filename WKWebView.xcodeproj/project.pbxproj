@@ -17,6 +17,10 @@
 		88C1A0192BECCED1008DDDDC /* WebScreenReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1A0182BECCED1008DDDDC /* WebScreenReducer.swift */; };
 		88C1A01B2BECD3DE008DDDDC /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1A01A2BECD3DE008DDDDC /* WebView.swift */; };
 		88C1A01F2BECD7C2008DDDDC /* LinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1A01E2BECD7C2008DDDDC /* LinkService.swift */; };
+		88C99BB22BF204E500C2565C /* WebBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C99BB12BF204E500C2565C /* WebBrowserView.swift */; };
+		88C99BB42BF204F300C2565C /* WebBrowserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C99BB32BF204F300C2565C /* WebBrowserViewModel.swift */; };
+		88C99BB62BF2098700C2565C /* BrowserRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C99BB52BF2098700C2565C /* BrowserRootView.swift */; };
+		88C99BB82BF22E1E00C2565C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C99BB72BF22E1E00C2565C /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		88C1A01A2BECD3DE008DDDDC /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		88C1A01E2BECD7C2008DDDDC /* LinkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkService.swift; sourceTree = "<group>"; };
 		88C1A0202BECF99D008DDDDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		88C99BB12BF204E500C2565C /* WebBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebBrowserView.swift; sourceTree = "<group>"; };
+		88C99BB32BF204F300C2565C /* WebBrowserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebBrowserViewModel.swift; sourceTree = "<group>"; };
+		88C99BB52BF2098700C2565C /* BrowserRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserRootView.swift; sourceTree = "<group>"; };
+		88C99BB72BF22E1E00C2565C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,7 @@
 			children = (
 				88C1A0122BECC9C0008DDDDC /* RootReducer.swift */,
 				88C1A0032BECB41B008DDDDC /* RootView.swift */,
+				88C99BB52BF2098700C2565C /* BrowserRootView.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -104,6 +113,7 @@
 		88C1A01C2BECD786008DDDDC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				88C99BB02BF204C500C2565C /* WebBrowserScreen */,
 				88C1A0142BECCE9E008DDDDC /* Root */,
 				88C1A0152BECCEAD008DDDDC /* WebScreen */,
 			);
@@ -114,8 +124,18 @@
 			isa = PBXGroup;
 			children = (
 				88C1A01E2BECD7C2008DDDDC /* LinkService.swift */,
+				88C99BB72BF22E1E00C2565C /* Logger.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		88C99BB02BF204C500C2565C /* WebBrowserScreen */ = {
+			isa = PBXGroup;
+			children = (
+				88C99BB12BF204E500C2565C /* WebBrowserView.swift */,
+				88C99BB32BF204F300C2565C /* WebBrowserViewModel.swift */,
+			);
+			path = WebBrowserScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,12 +215,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				88C1A0192BECCED1008DDDDC /* WebScreenReducer.swift in Sources */,
+				88C99BB82BF22E1E00C2565C /* Logger.swift in Sources */,
 				88C1A01F2BECD7C2008DDDDC /* LinkService.swift in Sources */,
 				88C1A0042BECB41B008DDDDC /* RootView.swift in Sources */,
 				88C1A0172BECCEBC008DDDDC /* WebScreenView.swift in Sources */,
+				88C99BB22BF204E500C2565C /* WebBrowserView.swift in Sources */,
 				88C1A01B2BECD3DE008DDDDC /* WebView.swift in Sources */,
 				88C1A0132BECC9C0008DDDDC /* RootReducer.swift in Sources */,
+				88C99BB42BF204F300C2565C /* WebBrowserViewModel.swift in Sources */,
 				88C1A0022BECB41B008DDDDC /* WKWebViewApp.swift in Sources */,
+				88C99BB62BF2098700C2565C /* BrowserRootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

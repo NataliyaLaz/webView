@@ -5,4 +5,11 @@
 //  Created by Nataliya Lazouskaya on 13/05/2024.
 //
 
-import Foundation
+import SwiftUI
+
+struct BrowserRootView: View {
+    
+    var body: some View {
+        WebBrowserView()
+    }
+}

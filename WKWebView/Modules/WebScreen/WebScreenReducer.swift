@@ -5,7 +5,7 @@
 //  Created by Nataliya Lazouskaya on 09/05/2024.
 //
 
-import Foundation
+/*import Foundation
 import ComposableArchitecture
 
 @Reducer
@@ -16,6 +16,8 @@ struct WebScreenFeature {
         var link: String?
         var canGoBack: Bool = false
         var navigateBack: Bool = false
+        var isLoading: Bool = false
+        var refreshIsNeeded: Bool = false
     }
     
     enum Action: BindableAction {
@@ -26,6 +28,7 @@ struct WebScreenFeature {
         case goBack
         case setCanGoBack(Bool)
         case navigateBackChanged(Bool)
+        case refreshWebView
     }
     
     @Dependency(\.linkService) var linkService
@@ -63,10 +66,13 @@ struct WebScreenFeature {
                     debugPrint("navigateBackChanged \(navigateBack)")
                     state.navigateBack = navigateBack
                     return .none
-                    
+                case .refreshWebView:
+                    debugPrint("Refresh is needed")
+                    state.refreshIsNeeded = true
+                    return .none
                 case .binding:
                     return .none
             }
         }
     }
-}
+}*/

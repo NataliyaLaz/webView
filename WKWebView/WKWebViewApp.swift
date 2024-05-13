@@ -12,9 +12,10 @@ import SwiftUI
 struct WKWebViewApp: App {
     var body: some Scene {
         WindowGroup {
-            RootView(store: Store(initialState: RootFeature.State()) {
-                RootFeature()
-            })
+//            RootView(store: Store(initialState: RootFeature.State()) {
+//                RootFeature()
+//            })
+            BrowserRootView()
         }
     }
 }

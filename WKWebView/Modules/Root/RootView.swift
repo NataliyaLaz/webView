@@ -8,7 +8,7 @@
 import ComposableArchitecture
 import SwiftUI
 
-struct RootView: View {
+/*struct RootView: View {
     @Perception.Bindable var store: StoreOf<RootFeature>
     var body: some View {
         WithPerceptionTracking {
@@ -43,5 +43,5 @@ struct RootView_Previews: PreviewProvider {
         }))
         .previewDisplayName("Unknown")
     }
-}
+}*/
 
